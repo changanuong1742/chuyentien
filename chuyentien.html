@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> Nhâp tiền</p>
+<input id="nhap"/>
+<br>
+<br>
+<br>
+
+<select name="tienvn">
+    <option value="vnd">Tiền Việt Nam</option>
+</select>
+    <br>
+<p> To</p>
+ <select name="tienmy">
+        <option value="usd">Tiền Mỹ</option>
+        <br>
+        <br>
+ </select>
+<button onclick="myFunction()">Đổi</button>
+<p id="hien"></p>
+
+<script>
+
+    function myFunction() {
+        let nhap = document.getElementById("nhap").value;
+        let sotien= nhap*23000;
+        document.getElementById("hien").innerHTML = "Số Tiền" + sotien;
+    }
+
+</script>
+
+</body>
+</html>
